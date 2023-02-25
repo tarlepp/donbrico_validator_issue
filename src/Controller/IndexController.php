@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 
 namespace App\Controller;
 
@@ -8,6 +9,8 @@ use Symfony\Component\HttpKernel\Attribute\AsController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\ConstraintViolationInterface;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use function array_map;
+use function iterator_to_array;
 
 #[AsController]
 readonly class IndexController
